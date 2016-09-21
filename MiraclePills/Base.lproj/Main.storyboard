@@ -47,7 +47,6 @@
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="1A3-Tc-IkR"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="1" id="QZl-C1-Jgv"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FULL NAME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W0n-qP-NB5">
@@ -136,14 +135,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sNZ-82-12G">
-                                <frame key="frameInset" minX="95" minY="632" width="225" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="buyNowBtn"/>
-                                <connections>
-                                    <action selector="pressBuyNowBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zHt-pu-pex"/>
-                                </connections>
-                            </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your city..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2ht-CU-Bhz">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="kWH-og-POL"/>
@@ -198,7 +189,6 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="buyNowBtn" destination="sNZ-82-12G" id="jp9-wu-Twx"/>
                         <outlet property="cityLbl" destination="cZu-gJ-5ew" id="PLV-gf-SE7"/>
                         <outlet property="countryLbl" destination="DNo-Ac-SxD" id="eSt-Ob-rjx"/>
                         <outlet property="enterCityTxt" destination="2ht-CU-Bhz" id="IYZ-OF-zHz"/>
@@ -261,7 +251,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="buyNowBtn" width="225" height="45"/>
         <image name="miraclePillEmoji" width="90" height="90"/>
         <image name="successIndicator" width="180" height="180"/>
     </resources>
